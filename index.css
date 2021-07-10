@@ -1,0 +1,126 @@
+body {
+  overflow: hidden;
+  font-family: myFirstFont;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(AwakenningPersonalUse-DOLPD.ttf);
+  font-weight: 300;
+}
+
+div.music {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+}
+
+div.banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align content: center;
+}
+
+div.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); */
+}
+
+.bg-modal{
+  width:100%;
+  height:100%;
+  /* background-color: rgba(0, 0, 0); */
+  position: absolute;
+  top:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content{
+  width:400px;
+  height: 250px;
+  background-color: #1F201D;
+  border-radius: 8px;
+  border: 2px solid white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+label{
+  font-size: 30px;
+  color:white;
+}
+input{
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+  color:black;
+
+}
+
+input[type=text], label{
+  /* width: 50%; */
+  display: block;
+  margin: 15px auto;
+}
+
+img{
+  height: 12vh
+}
+
+.close{
+  position: absolute;
+  top:0;
+  right:14px;
+  font-size:42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+}
+
+.button {
+  padding: 10px;
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: black;
+}
+
+/* Style the submit button with a specific background color etc */
+.Submit {
+  width: 30%;
+  position: relative;
+  top:1.5vh;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.Submit:hover {
+  opacity: 0.7;
+  background-color: lightgrey;
+}
